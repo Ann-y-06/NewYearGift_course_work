@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.giftapp.ui.GiftController" style="-fx-background-color: #f4f4f4; -fx-pref-width: 800; -fx-pref-height: 500;">
+
+    <left>
+        <VBox fx:id="menuContainer" spacing="15" style="-fx-padding: 20; -fx-pref-width: 250;">
+        </VBox>
+    </left>
+
+    <center>
+        <VBox fx:id="centerContainer" spacing="10" style="-fx-padding: 20;">
+            <Label text="📦 Товари на складі / в подарунку:" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+            <ListView fx:id="sweetsListView" VBox.vgrow="ALWAYS" />
+        </VBox>
+    </center>
+
+</BorderPane>

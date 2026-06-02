@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.giftapp.ui.AddSweetController" spacing="12" style="-fx-padding: 25; -fx-pref-width: 320; -fx-pref-height: 380;">
+
+    <Label text="Додавання солодощів" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-alignment: center;" maxWidth="Infinity"/>
+
+    <TextField fx:id="nameField" promptText="Назва" />
+    <TextField fx:id="weightField" promptText="Вага (г)" />
+    <TextField fx:id="sugarField" promptText="Цукор (%)" />
+
+    <DatePicker fx:id="datePicker" promptText="Придатний до" maxWidth="Infinity" />
+
+    <ComboBox fx:id="typeComboBox" promptText="Оберіть тип..." maxWidth="Infinity"/>
+
+    <VBox fx:id="dynamicFieldContainer" spacing="10" minHeight="30" />
+
+    <Button text="Зберегти" onAction="#handleSave" maxWidth="Infinity" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8;" />
+</VBox>
